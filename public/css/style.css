@@ -1,0 +1,364 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1F1A24;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.all {
+    flex: 1 0 auto;
+}
+
+.foot {
+    flex-shrink: 0;
+}
+
+nav {
+    position: relative;
+    z-index: 5;
+}
+
+/* .foot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} */
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.home .carousel-inner {
+    position: relative;
+    z-index: -2;
+}
+
+.home .carousel-item {
+    object-fit: cover;
+    height: 700px;
+}
+
+.home .carousel-item img {
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
+}
+
+.display-4 {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 16px;
+    margin-top: 450px;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.content .card {
+    max-width: 19rem;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    margin-top: -850px;
+}
+
+.searchbar {
+    margin-top: -360px;
+}
+
+.content {
+    position: relative;
+    z-index: 4;
+    margin-top: 60px;
+}
+
+.content .submission h3 {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .other h3 {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .about h3 {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .about p {
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+}
+
+.content .card img {
+    object-fit: cover;
+    height: 130px;
+}
+
+.top {
+    margin-top: -100px;
+}
+
+.top .carousel-inner {
+    position: relative;
+    z-index: -2;
+    border-radius: 10px;
+}
+
+.top .carousel-item {
+    object-fit: cover;
+    height: 500px;
+    filter: brightness(50%);
+}
+
+.top .carousel img {
+    margin-top: 200px
+}
+
+.more-card {
+    position: relative;
+    z-index: 0;
+    margin-top: 120px;
+}
+
+.more-card .display-4 {
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.more-card .data {
+    margin-top: 90px;
+}
+
+.more-card .card {
+    max-width: 19rem;
+}
+
+.more-card .card img {
+    object-fit: cover;
+    height: 130px;
+}
+
+.detail {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gallery .jumbo-bg{
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.gallery .jumbo{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    position: relative;
+    z-index: 10;
+    margin-top: -240px;
+}
+
+.gallery .thumbnail {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+.gallery .thumbnail .thumb {
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    border-radius: 2px;
+}
+
+
+.selected {
+    opacity: 0.5;
+}
+
+.sub-vid {
+    width: 100%;
+    height: 250px;
+}
+
+@media (min-width: 992px) {
+    .home .carousel-item {
+        height: 700px;
+    }
+
+    .home .carousel-item img {
+        margin-top: -100px;
+    }
+
+    .display-4 {
+        font-size: 60px;
+        line-height: 32px;
+        margin-top: 430px;
+    }
+
+    .content .card {
+        max-width: 19rem;
+    }
+
+    .gradient {
+        position: absolute;
+        width: 100%;
+        height: 2000px;
+        margin-top: -850px;
+
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(31, 26, 36, 0.850157) 24.27%, #1F1A24 38.33%);
+    }
+
+    .searchbar {
+        margin-top: -350px;
+    }
+
+    .content {
+        margin-top: 380px;
+    }
+
+    .content .submission h3 {
+        text-align: right;
+    }
+
+    .content .other h3 {
+        text-align: left;
+    }
+
+    .content .about h3 {
+        text-align: right;
+    }
+
+    .content .about p {
+        text-align: right;
+    }
+
+    .content .card img {
+        object-fit: cover;
+        height: 180px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card {
+        transition: transform 0.2s ease;
+    }
+
+    .top {
+        margin-top: 100px;
+    }
+
+    .top .carousel-inner {
+        border-radius: 10px;
+    }
+
+    .top .carousel-item {
+        height: 300px;
+    }
+
+    .top .carousel img {
+        margin-top: -200px
+    }
+
+    .more-card {
+        margin-top: 130px;
+    }
+
+    .more-card .display-4 {
+        font-size: 40px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+
+    .more-card .data {
+        margin-top: 150px;
+    }
+
+    .more-card .card {
+        margin-top: 100px;
+    }
+
+    .more-card .card img {
+        height: 180px;
+    }
+
+    .detail {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .gallery .jumbo-bg {
+        height: 380px;
+    }
+
+    .gallery .jumbo {
+        height: 350px;
+        margin-top: -405px;
+    }
+
+    .gallery .thumbnail .thumb {
+        height:150px;
+    }
+
+    .gallery .thumbnail .thumb:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .sub-vid {
+        height: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .display-4 {
+        font-size: 20px;
+        margin-top: 400px;
+    }
+
+    .searchbar {
+        margin-top: -410px;
+    }
+}
